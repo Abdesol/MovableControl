@@ -2,19 +2,44 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:MovableControl.Controls"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="MovableControl.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
         Title="MovableControl">
     
     <Panel>
-        <Border Background="Gray"
-                CornerRadius="5"
-                Height="50"
-                Width="150">
-            <Label Content="My control"
+        <controls:CustomMovableBorder 
+             Background="Gray"
+             HorizontalAlignment="Left"
+             CornerRadius="5"
+             Height="50"
+             Width="150">
+            <Label Content="My control 1"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"/>
-        </Border>
+        </controls:CustomMovableBorder>
+        
+        <controls:CustomMovableBorder 
+             Background="Green"
+             HorizontalAlignment="Center"
+             CornerRadius="5"
+             Height="50"
+             Width="150">
+            <Label Content="My control 2"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+        </controls:CustomMovableBorder>
+        
+        <controls:CustomMovableBorder 
+            Background="Brown"
+            HorizontalAlignment="Right"
+            CornerRadius="5"
+            Height="50"
+            Width="150">
+            <Label Content="My control 3"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+        </controls:CustomMovableBorder>
     </Panel>
 </Window>
