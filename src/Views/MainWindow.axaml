@@ -8,7 +8,7 @@
         Icon="/Assets/avalonia-logo.ico"
         Title="MovableControl">
     
-    <Panel>
+    <Panel Margin="10">
         <controls:CustomMovableBorder 
              Background="Gray"
              HorizontalAlignment="Left"
